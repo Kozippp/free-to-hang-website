@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
+  // Removed 'output: export' for Vercel deployment
   images: {
-    unoptimized: true
+    domains: ['supabase.co']
   }
 }
 
